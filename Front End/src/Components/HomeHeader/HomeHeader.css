@@ -1,0 +1,48 @@
+.homeHeader{
+    background-color:gray;
+    margin:30px auto;
+    background-size:contain;
+    position:relative;
+    background:url('../../assets/header_img.png') no-repeat;
+    background-size: cover;
+    height:25vw;
+    border-radius:20px;
+}
+.homeHeader .headerContent{
+    position:absolute;
+    bottom:10%;
+    left:6vw;
+    display: flex;
+    justify-content: start;
+    max-width: 60%;
+    gap:1.5vw;
+    flex-direction:column;
+    animation:fadeIn 2s;
+}
+.homeHeader .headerContent button{
+    align-self: start;
+    border:none;
+    padding:1vw 2.2vw;
+    color:#747474;
+    font-size:max(1vw,13px);
+    border-radius:50px;
+    cursor:pointer;
+}
+.homeHeader .headerContent h2{
+    color:white;
+    font-weight:500;
+    font-size:max(3.5vw,22px);
+}
+.homeHeader .headerContent p{
+   color:white;
+   font-size:max(1.2vw,16px);
+}
+@keyframes fadeIn {
+    0%{
+        opacity:0;
+    }50%{
+        opacity:0.5;
+    }100%{
+        opacity:1;
+    }
+}
